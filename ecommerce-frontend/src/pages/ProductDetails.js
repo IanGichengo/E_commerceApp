@@ -1,27 +1,18 @@
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+// src/pages/ProductDetails.js
+import React from 'react';
+import './ProductDetails.css';
 
-function ProductDetails() {
-  const { id } = useParams();
-  const [product, setProduct] = useState(null);
-
-  useEffect(() => {
-    axios.get(`/api/products/${id}`).then((response) => setProduct(response.data));
-  }, [id]);
-
-  if (!product) return <p>Loading...</p>;
+const ProductDetails = ({ match }) => {
+  const productId = match.params.id;
+  // Fetch product details based on productId
 
   return (
     <div className="product-details">
-      <img src={product.imageUrl} alt={product.name} />
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
-      <button>Add to Cart</button>
+      <h1>Product {productId} Details</h1>
+      {/* Add more details here */}
     </div>
   );
-}
+};
 
 export default ProductDetails;
 
