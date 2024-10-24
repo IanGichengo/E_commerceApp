@@ -1,0 +1,20 @@
+.welcome {
+  background-image: url('https://th.bing.com/th/id/R.4fcd0c0a4ab6e942a40d7b31b0014e10?rik=Q%2f6qcPfJQqMSOQ&pid=ImgRaw&r=0');
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-message {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    height: 200px;
+  }
+}
+
