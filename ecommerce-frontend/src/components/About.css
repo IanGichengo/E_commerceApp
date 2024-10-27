@@ -1,5 +1,5 @@
 .about {
-  background-color: green;
+  background: linear-gradient(to right, #00ff00, #008000);
   color: white;
   padding: 40px;
   text-align: center;

@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: green;
+  background: linear-gradient(to right, #00ff00, #008000);
   color: white;
+  font-size: 10px;
 }
 
 .logo {

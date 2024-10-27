@@ -10,7 +10,7 @@ function Header({ cartItems }) {
 
   return (
     <header className="header">
-      <div className="logo">Organic Farm Fresh by Sokoni</div>
+      <div className="logo">Kilimo Bora Organic Produce</div>
       <nav className={isMenuOpen ? "nav open" : "nav"}>
         <ul>
           <li><a href="#home">Home</a></li>
