@@ -1,6 +1,6 @@
 export const productData = [
   { id: 1, name: "Organic Apple", price: "$2", image: "/assets/apple.jpg" },
-  { id: 2, name: "Organic Banana", price: "$1", image: "/assets/banana.jpg" },
+  { id: 2, name: "Organic Banana", price: "KSh 200 per Kilo", image: "/assets/banana.jpg" },
   { id: 3, name: "Organic Carrot", price: "$3", image: "/assets/carrot.jpg" },
   { id: 4, name: "Organic Tomato", price: "$2.5", image: "/assets/tomato.jpg" },
   { id: 5, name: "Organic Lettuce", price: "$1.5", image: "/assets/lettuce.jpg" },
