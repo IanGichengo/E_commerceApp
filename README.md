@@ -153,6 +153,4 @@ Responsive Styling: Ensure the app is fully responsive on all device sizes.
 
 Database Integration: Store user data and product information in a database to make it persistent across sessions.
 
-
-
----
+#
