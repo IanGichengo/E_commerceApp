@@ -2,7 +2,7 @@
 
 # Organic Farm Fresh by Sokoni
 
-This is a front-end eCommerce web application developed with React for a fictional organic farm store, Organic Farm Fresh by Sokoni. The project includes different user roles with separate pages for administrators and users, enabling product management for the admin and product viewing for the user.
+This is a front-end eCommerce web application developed with React for an organic farm store, Organic Farm Fresh by Sokoni. The project includes different user roles with separate pages for administrators and users, enabling product management for the admin and product viewing for the user.
 
 Table of Contents
 
