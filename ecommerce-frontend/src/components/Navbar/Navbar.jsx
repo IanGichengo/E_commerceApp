@@ -14,10 +14,10 @@ const Navbar = () => {
                 <p>SHOPPER</p>
             </div>
             <ul className="nav-menu">
-                <li> onClick={()=>{setMenu("shop")}}<link to='/'>Shop</link>{menu==="shop"?<h/>:<></>}</li>
-                <li> onClick={()=>{setMenu("mens")}}<link to='/mens'>Men</link>{menu==="mens"?<h/>:<></>}</li>
-                <li> onClick={()=>{setMenu("womens")}}<link to="womens">Women</link>{menu==="womens"?<h/>:<></>}</li>
-                <li> onClick={()=>{setMenu("kids")}}<link to='/kids'>Kids</link>{menu==="kids"?<h/>:<></>}</li>
+                <li> onClick={()=>{setMenu("shop")}}<link style={{ textDecoration: 'none' }} to='/'>Shop</link>{menu==="shop"?<h/>:<></>}</li>
+                <li> onClick={()=>{setMenu("mens")}}<link style={{ textDecoration: 'none' }} to='/mens'>Men</link>{menu==="mens"?<h/>:<></>}</li>
+                <li> onClick={()=>{setMenu("womens")}}<link style={{ textDecoration: 'none' }} to="womens">Women</link>{menu==="womens"?<h/>:<></>}</li>
+                <li> onClick={()=>{setMenu("kids")}}<link style={{ textDecoration: 'none' }} to='/kids'>Kids</link>{menu==="kids"?<h/>:<></>}</li>
             </ul>
             <div className="nav-login-cart">
                 <link to='/login'><button>Login</button></link>
