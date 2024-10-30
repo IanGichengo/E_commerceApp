@@ -1,29 +1,27 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
-import Welcome from "./components/Welcome";
-import About from "./components/About";
-import Products from "./components/Products";
-import Footer from "./components/Footer";
-import "./App.css";
-import { productData } from "./data";
+
+import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
-  const [cart, setCart] = useState([]);
-
-  const handleAddToCart = (product) => {
-    setCart([...cart, product]);
-  };
-
   return (
-    <div className="app">
-      <Header cartItems={cart.length} />
-      <Welcome />
-      <About />
-      <Products products={productData} addToCart={handleAddToCart} />
-      <Footer />
+    <div>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Shop/>}/>
+        <Route path='/mens' element={<ShopCategory category="men"/>}/>
+        <Route path='/womens' element={<ShopCategory category="women"/>}/>
+        <Route path='/kids' element={<ShopCategory category="kid"/>}/>
+        <Route path="/product" element={<Product/>}>
+        <Route path=':productId' element={<Product/>}/>
+        </Route>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/login' element={<LoginSignup/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
