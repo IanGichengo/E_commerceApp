@@ -1,49 +1,81 @@
-.offers{
-    width: 65%;
-    height: 60vh;
+.offers {
+    width: 90%; /* Full width on smaller screens */
+    max-width: 1200px; /* Limit max width for larger screens */
+    height: auto; /* Change to auto for better content fitting */
     display: flex;
     margin: auto;
-    padding: 0px 140px;
+    padding: 40px 20px; /* Add padding for better spacing */
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 15px; /* Optional: rounded corners for aesthetic */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for depth */
 }
 
-.offers-left{
+.offers-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 20px; /* Add side padding for better spacing */
 }
 
-.offers-left h1{
+.offers-left h1 {
     color: #171717;
-    font-size: 80px;
+    font-size: 3rem; /* Responsive font size */
     font-weight: 600;
+    margin: 0; /* Remove default margin */
 }
 
-.offers-left p{
+.offers-left p {
     color: #171717;
-    font-size: 22px;
+    font-size: 1.5rem; /* Responsive font size */
     font-weight: 600;
+    margin: 5px 0; /* Add some vertical margin */
 }
 
-.offers-left button{
-    width: 282px;
-    height: 70px;
-    border-radius: 35px;
+.offers-left button {
+    width: 200px; /* Adjust width */
+    height: 60px; /* Adjust height */
+    border-radius: 30px; /* Adjust border radius */
     background: #ff4141;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: 1.5rem; /* Responsive font size */
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 20px; /* Adjust top margin */
     cursor: pointer;
 }
 
-.offers-right{
+.offers-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 50px;
+    padding-top: 20px; /* Reduce top padding for better alignment */
+}
+
+.offers-right img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .offers {
+        height: 80vh; /* Increase height for larger screens */
+    }
+
+    .offers-left h1 {
+        font-size: 4rem; /* Increase font size for larger screens */
+    }
+
+    .offers-left p {
+        font-size: 1.75rem; /* Increase font size */
+    }
+
+    .offers-left button {
+        width: 282px; /* Original width for larger screens */
+        height: 70px; /* Original height */
+        font-size: 22px; /* Original font size */
+    }
 }
