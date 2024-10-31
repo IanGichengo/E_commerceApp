@@ -4,7 +4,7 @@ import './Item.css'
 export const Item = (props) => {
     return (
     <div className='Item'>
-        <img src={props.img alt="" />
+            <img src={props.img} alt="" />
         <p>{props.name}</p>
         <div className="item-prices">
             <div className="item-price-new">
