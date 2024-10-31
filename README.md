@@ -1,8 +1,8 @@
 
 
-# Kilimo Bora Organic Produce.
+# Shopper E-commerce App.
 
-This is a front-end eCommerce web application developed with React for an organic farm store, Organic Farm Fresh by Sokoni. The project includes different user roles with separate pages for administrators and users, enabling product management for the admin and product viewing for the user.
+This is a front-end eCommerce web application developed with React for selling fashionable clothes. The project includes different user roles with separate pages for administrators and users, enabling product management for the admin and product viewing for the user.
 
 Table of Contents
 
@@ -38,7 +38,7 @@ Admin can log in to access a dashboard, where they will eventually be able to ad
 User can log in to view products listed by the admin.
 
 
-The theme colors are green, white, and black, aligning with the brand's organic aesthetic.
+The theme colors are pink, white, and black, aligning with the brand's fashionable aesthetic.
 
 ---
 
