@@ -74,8 +74,8 @@ Installation
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/organic-farm-fresh
-cd organic-farm-fresh
+git clone https://github.com/your-username/Shopper_E-commerce_App
+cd Shopper_E-commerce_App
 
 
 2. Install dependencies:
@@ -93,7 +93,7 @@ npm start
 ---
 
 Project Structure
-
+./AN UPDATE IS DUE IGNORE!!!
 ecommerce-frontend/
 ├── public/
 ├── src/
