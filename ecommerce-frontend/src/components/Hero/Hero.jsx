@@ -9,9 +9,8 @@ export const Hero = () => {
         <div className='hero'>
             <div className="hero-left">
                 <h2></h2>
-                <div className="hero-hand-icon">
-                    <p>new</p>
-                    <img src={hand_icon} alt="Hand Icon" />
+                <div className="welcome-message">
+                    Welcome New Offers on Merch!
                 </div>
                 <p>collections</p>
                 <p>for everyone</p>

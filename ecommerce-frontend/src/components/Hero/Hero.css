@@ -30,16 +30,6 @@
     font-weight: 700;
 }
 
-.hero-hand-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjusted for better spacing */
-}
-
-.hero-hand-icon img {
-    width: 80px; /* Adjusted for better responsiveness */
-}
-
 .hero-latest-btn {
     display: flex;
     justify-content: center;
@@ -100,5 +90,23 @@
 
     .hero-left p {
         font-size: 4rem; /* Adjust font size for tablet view */
+    }
+}
+
+.welcome-message {
+    font-size: 2em;
+    color: red;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn 3s infinite alternate;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
     }
 }
