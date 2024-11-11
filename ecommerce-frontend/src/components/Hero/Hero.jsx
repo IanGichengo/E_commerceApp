@@ -9,8 +9,8 @@ export const Hero = () => {
         <div className='hero'>
             <div className="hero-left">
                 <h2></h2>
-                <div className="welcome-message">
-                    Welcome New Offers on Merch!
+                <div class="welcome-message">
+                    🎅 Welcome New Offers on Merch! 🎅
                 </div>
                 <p>collections</p>
                 <p>for everyone</p>

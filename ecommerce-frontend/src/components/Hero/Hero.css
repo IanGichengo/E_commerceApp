@@ -96,7 +96,7 @@
 .welcome-message {
     font-size: 2em;
     color: red;
-    background-color: grey;
+    background-color: #d3d3d3;
     padding: 20px;
     border-radius: 10px;
     animation: slideIn 3s infinite alternate;
@@ -107,6 +107,6 @@
         transform: translateX(-100%);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(150%);
     }
 }
