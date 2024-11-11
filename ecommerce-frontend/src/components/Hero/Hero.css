@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    background: linear-gradient(180deg, grey, rgba(69, 171, 99, 0.133) 60%);
     display: flex;
     flex-direction: row; /* Ensure left and right are in a row */
     align-items: center; /* Center content vertically */
@@ -63,8 +63,8 @@
 }
 
 .hero-right img {
-    max-width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 50%; /* Make image responsive */
+    max-height: 25%; /* Maintain aspect ratio */
 }
 
 /* Responsive Design */
