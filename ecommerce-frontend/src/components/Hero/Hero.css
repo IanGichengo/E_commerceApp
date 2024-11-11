@@ -3,6 +3,8 @@
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
     flex-direction: row; /* Ensure left and right are in a row */
+    align-items: center; /* Center content vertically */
+    padding: 0 30px; /* Add padding for smaller screens */
 }
 
 .hero-left {
@@ -11,44 +13,45 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
+    padding-left: 40px; /* Adjust padding for smaller screens */
 }
 
 .hero-left h2 {
     color: #090909;
-    font-size: 26px;
+    font-size: 2rem; /* Use rem for responsive font size */
     font-weight: 600;
+    display: inline-flexbox;
+    margin-top: 100px;
 }
 
 .hero-left p {
     color: #171717;
-    font-size: 80px;
+    font-size: 5rem; /* Responsive font size */
     font-weight: 700;
 }
 
 .hero-hand-icon {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px; /* Adjusted for better spacing */
 }
 
 .hero-hand-icon img {
-    width: 105px;
+    width: 80px; /* Adjusted for better responsiveness */
 }
 
 .hero-latest-btn {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center; /* Center vertically */
     gap: 15px;
-    width: 310px;
-    height: 70px;
+    width: 250px; /* Reduced width */
+    height: 60px; /* Reduced height */
     border-radius: 75px;
-    margin-top: 30px;
+    margin-top: 20px; /* Adjusted margin */
     background: #ff4141;
     color: white;
-    font-size: 22px;
+    font-size: 1.2rem; /* Responsive font size */
     font-weight: 500;
 }
 
@@ -72,14 +75,30 @@
     }
 
     .hero-left p {
-        font-size: 50px; /* Decrease font size on smaller screens */
+        font-size: 3rem; /* Decrease font size on smaller screens */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Smaller icon on mobile */
     }
 
     .hero-latest-btn {
-        width: 80%; /* Make button full width on smaller screens */
+        width: 100%; /* Make button full width on smaller screens */
+        padding: 10px; /* Add padding for button */
+        font-size: 1rem; /* Adjust font size */
     }
 
-    .hero-right img {
+    .hero-right {
         display: none; /* Hide image on very small screens for better layout */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero-left {
+        padding-left: 60px; /* Increase padding for tablet view */
+    }
+
+    .hero-left p {
+        font-size: 4rem; /* Adjust font size for tablet view */
     }
 }
