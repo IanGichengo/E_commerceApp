@@ -1,14 +1,16 @@
 import React from 'react';
 import './Hero.css';
-import hand_icon from '../Assets/hand_icon.png';
 import arrow_icon from '../Assets/arrow.png';
 import hero_image from '../Assets/hero_image.png';
+import homepage_background from '../Assets/homepage_background.jpg';
 
 export const Hero = () => {
     return (
         <div className='hero'>
+            <div>
+                <img src={homepage_background} alt="Hero" />
+            </div>
             <div className="hero-left">
-                <h2></h2>
                 <div class="welcome-message">
                     🎅 Welcome New Offers on Merch! 🎅
                 </div>
