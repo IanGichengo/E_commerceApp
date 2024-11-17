@@ -11,9 +11,6 @@ export const Hero = () => {
                 <img src={homepage_background} alt="Hero" />
             </div>
             <div className="hero-left">
-                <div class="welcome-message">
-                    🎅 Welcome New Offers on Merch! 🎅
-                </div>
                 <p>collections</p>
                 <p>for everyone</p>
                 <div className="hero-latest-btn">
