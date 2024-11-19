@@ -93,23 +93,40 @@ npm start
 ---
 
 Project Structure
-./AN UPDATE IS DUE IGNORE!!!
+
+
 ecommerce-frontend/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── Homepage.js         // Homepage with links to login pages
-│   │   ├── AdminLogin.js       // Admin login page
-│   │   ├── UserLogin.js        // User login page
-│   │   ├── AdminDashboard.js   // Admin dashboard placeholder
+│   │   ├── Assets/
+|   |   |   ├──
+│   │   ├── Footer/
+|   |   |   ├── 
+│   │   ├── Hero/
+|   |   |   ├── 
+│   │   ├── Item/
+|   |   |   ├── 
+│   │   ├── Navbar/
+|   |   |   ├── 
+│   │   ├── NewCollections/
+|   |   |   ├── 
+│   │   ├── NewsLetter/
+|   |   |   ├── 
+│   │   ├── Offers/
+|   |   |   ├── 
+│   │   ├── Popular/
+|   |   |   ├── 
 │   │   └── UserPage.js         // User product viewing page placeholder
 │   ├── App.js                  // Main application component with routes
+│   ├── App.css
+│   ├── index.css
 │   └── index.js                // Entry point for the application
 └── README.md
 
 ---
 
-Usage
+Usage & Features
 
 1. Homepage: Access the login pages via the homepage (/ route).
 
