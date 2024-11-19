@@ -72,6 +72,7 @@ npm (usually comes with Node.js)
 
 Installation
 
+*These are the steps to run the website locally.
 1. Clone the repository:
 
 git clone https://github.com/your-username/Shopper_E-commerce_App
