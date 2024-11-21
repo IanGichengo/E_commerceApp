@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css';
+import './Header.css';
 import arrow_icon from '../Assets/arrow.png';
 
 // Hero component for the main hero section in the Shop page.
