@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('../Assets/homepage_background.jpg'); /* Set background image */
+    background-image: url('../Assets/homepage_background.png'); /* Set background image */
     background-size: cover; /* Ensure it covers the entire container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
