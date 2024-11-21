@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Popular from './Components/Popular/Popular';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Shop from './Pages/Shop';
+import Home from './Pages/Home';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Shop/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/mens' element={<ShopCategory category="men"/>}/>
         <Route path='/womens' element={<ShopCategory category="women"/>}/>
         <Route path='/kids' element={<ShopCategory category="kid"/>}/>
