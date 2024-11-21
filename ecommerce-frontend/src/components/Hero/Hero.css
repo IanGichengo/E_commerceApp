@@ -1,88 +1,47 @@
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: row; /* Ensure left and right are in a row */
-    align-items: center; /* Center content vertically */
-    padding: 0 30px; /* Add padding for smaller screens */
-}
-
-.hero img {
-    max-width: 100%; /* Make image responsive */
-    max-height: 80%; /* Maintain aspect ratio */
+    background-image: url('../Assets/homepage_background.jpg'); /* Set background image */
+    background-size: cover; /* Ensure it covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    width: 100%; /* Full width of the container */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flex layout for children */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between left and right content */
+    position: relative; /* For relative positioning of children */
 }
 
 .hero-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 40px; /* Adjust padding for smaller screens */
-}
-
-.hero-left h2 {
-    color: #090909;
-    font-size: 2rem; /* Use rem for responsive font size */
-    font-weight: 600;
-    display: inline-flexbox;
-    margin-top: 100px;
+    margin-left: 2rem; /* Add some spacing */
+    color: #fff; /* White text color for contrast */
 }
 
 .hero-left p {
-    color: #171717;
-    font-size: 2rem; /* Responsive font size */
-    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .hero-latest-btn {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
-    gap: 15px;
-    width: 250px; /* Reduced width */
-    height: 60px; /* Reduced height */
-    border-radius: 75px;
-    margin-top: 20px; /* Adjusted margin */
-    background: #ff4141;
-    color: white;
-    font-size: 1.2rem; /* Responsive font size */
-    font-weight: 500;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.hero-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.hero-latest-btn div {
+    color: #fff; /* White text color */
+    margin-right: 0.5rem;
+}
+
+.hero-latest-btn img {
+    width: 1rem;
+    height: 1rem;
 }
 
 .hero-right img {
-    max-width: 50%; /* Make image responsive */
-    max-height: 25%; /* Maintain aspect ratio */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-left {
-        padding-left: 20px; /* Reduce padding on smaller screens */
-        text-align: center; /* Center text on smaller screens */
-    }
-
-    .hero-left p {
-        font-size: 3rem; /* Decrease font size on smaller screens */
-    }
-
-    .hero-hand-icon img {
-        width: 60px; /* Smaller icon on mobile */
-    }
-
-    .hero-latest-btn {
-        width: 100%; /* Make button full width on smaller screens */
-        padding: 10px; /* Add padding for button */
-        font-size: 1rem; /* Adjust font size */
-    }
-
-    .hero-right {
-        display: none; /* Hide image on very small screens for better layout */
-    }
+    width: 50%; /* Adjust image size */
+    margin-right: 2rem; /* Add spacing */
 }
