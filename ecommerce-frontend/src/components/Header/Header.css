@@ -11,15 +11,6 @@
     position: relative; /* For relative positioning of children */
 }
 
-.hero-left {
-    margin-left: 2rem; /* Add some spacing */
-    color: #fff; /* White text color for contrast */
-}
-
-.hero-left p {
-    font-size: clamp(1rem, 4vw, 2rem); /* Responsive font s/\\\\\\\\\\\\\
-    margin: 0;
-}
 
 .hero-latest-btn {
     display: flex;
@@ -34,7 +25,7 @@
 .hero-latest-btn p {
     font-size: 1.2rem; /* Responsive font size */
     margin: 0;
-    color: #fff; /* White text color for contrast */
+    color: #880080; /* White text color for contrast */
 }
 
 @media (max-width: 768px) {
