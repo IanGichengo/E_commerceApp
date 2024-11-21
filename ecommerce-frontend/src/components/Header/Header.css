@@ -25,7 +25,7 @@
 .hero-latest-btn p {
     font-size: 1.2rem; /* Responsive font size */
     margin: 0;
-    color: #880080; /* White text color for contrast */
+    color: white; /* White text color for contrast */
 }
 
 @media (max-width: 768px) {
