@@ -4,7 +4,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repetition */
     width: 100%; /* Full width of the container */
-    height: 100vh; /* Full height of the viewport */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
     display: flex; /* Flex layout for children */
     align-items: center; /* Vertically align items */
     justify-content: space-between; /* Space between left and right content */
@@ -17,26 +17,36 @@
 }
 
 .hero-left p {
-    font-size: 2rem;
+    font-size: clamp(1rem, 4vw, 2rem); /* Responsive font s/\\\\\\\\\\\\\
     margin: 0;
 }
 
 .hero-latest-btn {
     display: flex;
-    align-items: center;
-    margin-top: 1rem;
+    align-items: center;   
+    margin-top: 2%;
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: auto;
 }
 
-.hero-latest-btn div {
-    color: #fff; /* White text color */
-    margin-right: 0.5rem;
+.hero-latest-btn p {
+    font-size: 1.2rem; /* Responsive font size */
+    margin: 0;
+    color: #fff; /* White text color for contrast */
 }
 
-.hero-latest-btn img {
-    width: 1rem;
-    height: 1rem;
+@media (max-width: 768px) {
+    .hero {
+        aspect-ratio: 4 / 3; /* Adjust to 4:3 for smaller devices */
+    }
+
+    .hero-left {
+        margin-left: 1rem; /* Reduce margin */
+    }
+
+    .hero-left p {
+        font-size: clamp(1.2rem, 3vw, 2rem); /* Adjust font size for smaller screens */
+    }
 }
