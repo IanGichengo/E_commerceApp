@@ -18,12 +18,6 @@
     max-width: 100px; /* Ensures logo is not too large */
 }
 
-.footer-logo p {
-    color: #383838;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
 .footer-links {
     display: flex;
     list-style: none;
