@@ -32,12 +32,4 @@
     .hero {
         aspect-ratio: 4 / 3; /* Adjust to 4:3 for smaller devices */
     }
-
-    .hero-left {
-        margin-left: 1rem; /* Reduce margin */
-    }
-
-    .hero-left p {
-        font-size: clamp(1.2rem, 3vw, 2rem); /* Adjust font size for smaller screens */
-    }
 }

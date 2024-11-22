@@ -6,9 +6,7 @@ import './Header.css';
 export const Hero = () => {
     return (
         <div className="hero">
-                <div className="hero-latest-btn">
-                    <p> Sign Up now to view our Latest Collection</p>
-                </div>
+            
         </div>
     );
 }
