@@ -8,11 +8,14 @@
     position: sticky;
     top: 0;
     z-index: 100; /* Ensures the navbar stays on top */
+    overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
+    flex-shrink: 0; /* Prevents shrinking of the logo */
 }
 
 .nav-logo img {
@@ -25,6 +28,8 @@
     align-items: center;
     list-style: none;
     gap: 2rem;
+    flex-shrink: 1; /* Allow shrinking to fit smaller screens */
+    overflow: hidden; /* Prevent excessive growth */
 }
 
 .nav-menu li {
@@ -44,22 +49,11 @@
     color: #FF4141;
 }
 
-.nav-menu h {
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 3px;
-    background: #FF4141;
-    border-radius: 10px;
-    display: block;
-}
-
 .nav-login-cart {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-shrink: 0; /* Prevent shrinking of the login/cart section */
 }
 
 .nav-login-cart button {
@@ -79,10 +73,6 @@
 .nav-login-cart button:hover {
     background: #FF4141;
     color: white;
-}
-
-.nav-login-cart button:active {
-    background: #f3f3f3;
 }
 
 .nav-login-cart img {
@@ -107,25 +97,35 @@
     font-weight: bold;
 }
 
+/* Responsive Scaling for Smaller Tabs */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .nav-menu {
-        gap: 1rem;
-        font-size: 14px;
-    }
-
-    .nav-login-cart {
-        gap: 1rem;
-        margin-top: 10px;
+        gap: 1rem; /* Reduce gaps for smaller screens */
     }
 
     .nav-login-cart button {
-        width: 120px;
+        width: 120px; /* Adjust button size */
         height: 40px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 8px; /* Reduce padding for narrow screens */
+    }
+
+    .nav-menu {
+        gap: 0.5rem; /* Further reduce gaps */
+    }
+
+    .nav-login-cart button {
+        width: 100px;
+        height: 36px;
+        font-size: 12px; /* Adjust button font size */
+    }
+
+    .nav-logo img {
+        height: 36px; /* Scale down the logo */
     }
 }
