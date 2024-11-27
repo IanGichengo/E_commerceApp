@@ -1,6 +1,6 @@
 
 
-# Shopper E-commerce App.
+# Velluto Bianco E-commerce Website.
 
 This is a front-end eCommerce web application developed with React for selling fashionable clothes. The project includes different user roles with separate pages for administrators and users, enabling product management for the admin and product viewing for the user.
 
